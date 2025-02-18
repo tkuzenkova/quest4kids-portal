@@ -1,5 +1,4 @@
 import { IPostFormValues } from "@/core/types/posts";
-import { IUser } from "@/core/types/users";
 import { API_PATH } from "../_common/consts";
 import { request } from "../_common/request";
 
@@ -16,7 +15,7 @@ export const postsService = {
 
 		return request(options);
 	},
-	getPost: (id: PostId) => {
+	getPost: () => {
 		// fetch user from the server by id
 	},
 	addPost: (post: IPostFormValues) => {
@@ -30,10 +29,10 @@ export const postsService = {
 
 		return request(options);
 	},
-	updatePost: (user: IUser) => {
+	updatePost: () => {
 		// update user in the server
 	},
-	deletePost: (id: PostId) => {
+	deletePost: () => {
 		// delete user from the server
 	},
 };

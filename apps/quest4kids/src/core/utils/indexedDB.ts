@@ -1,3 +1,5 @@
+import { IWeather } from "../types/weather";
+
 const DB_NAME = "SearchWeatherDB";
 const STORE_NAME = "searchWeatherResults";
 const DB_VERSION = 2;

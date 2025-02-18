@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const WEATHER_URL = process.env;
+const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
@@ -22,11 +22,11 @@ const nextConfig: NextConfig = {
 		return [
 			{
 				source: "/blog",
-				destination: `http://localhost:4000/blog`,
+				destination: `${BLOG_URL}/blog`,
 			},
 			{
 				source: "/blog/:path*",
-				destination: "http://localhost:4000/blog/:path*",
+				destination: `${BLOG_URL}/blog/:path*`,
 			},
 		];
 	},
