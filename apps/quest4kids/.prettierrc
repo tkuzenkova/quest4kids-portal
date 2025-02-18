@@ -1,0 +1,22 @@
+{
+	"tabWidth": 4,
+	"useTabs": true,
+	"arrowParens": "avoid",
+	"trailingComma": "all",
+	"printWidth": 80,
+	"endOfLine": "lf",
+	"overrides": [
+		{
+			"files": "*.css",
+			"options": {
+				"useTabs": true
+			}
+		}
+	],
+	"plugins": [
+		"prettier-plugin-organize-imports",
+		"prettier-plugin-tailwindcss"
+	],
+	"tailwindStylesheet": "./styles/global.css",
+	"tailwindFunctions": ["tw"]
+}
